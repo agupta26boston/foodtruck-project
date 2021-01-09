@@ -1,0 +1,22 @@
+How you would take this proof-of-concept command line application and convert it to a fully featured web application?
+
+Here are a few considerations
+
+Front-end
+Since this app is more about the data returned it will be absolutely necessary to develop a very informative and user-friendly UI that helps the users with engagement and locating 
+the information in an interactive way.
+
+Load balancers 
+FOr increased loads of users requesting the data , load balancing will help with redirecting requests to mulitple servers calling the socrata API.
+
+Caching
+Since the app is read heavy and there are a lot of chances of overlapping results at the same time the caching mechanism will help offload the network calls and make the response times faster.
+
+Logging 
+Would like to ensure concrete logging mechanism across the steps to trace the errors as well as application problems as it scales over time to serve more and more users.
+
+Zip-code/radius based searches
+Would try to explore options for providing the users with a distance based search helping improve the result quality and user experience. 
+
+Future modifications
+Can create new inhouse stored endpoint to save reviews for each foodtruck. Make it a more engaging and informative community driven application with introducing options to post reviews/pictures etc.
